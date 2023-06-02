@@ -1,0 +1,88 @@
+body {
+  background-image: url(https://getwallpapers.com/wallpaper/full/c/9/6/1444097-top-4k-games-wallpaper-3840x2160.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background: #0124439d;
+  box-shadow: 15px 15px 30px #414141, -15px -15px 30px #414141;
+}
+
+.sign {
+  color: #8b8b8b;
+}
+.create {
+  color: white;
+}
+h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 47px;
+}
+.signup {
+  padding-top: 40px;
+  text-align: center;
+}
+.in {
+  padding-top: 2px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inp {
+  margin: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  max-width: 190px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 9999px;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  color: #fff;
+}
+
+.continue {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: all 0.5s ease;
+}
+
+.continue:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.continue:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+.reg {
+  font-size: 12px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-top: 170px;
+}
+.by {
+  color: #8b8b8b;
+}
+.terms {
+  color: white;
+}
+form {
+  padding-top: 30px;
+  padding-bottom: 195px;
+}

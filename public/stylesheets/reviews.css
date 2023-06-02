@@ -1,0 +1,413 @@
+header {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.275), rgba(0, 0, 0, 0.269)),
+    url(https://images7.alphacoders.com/587/587535.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.a {
+  text-align: center;
+  padding: 5%;
+}
+.buttons {
+  padding-top: 10px;
+}
+.topbutton {
+  background-color: rgba(250, 235, 215, 0);
+  border: none;
+  color: white;
+  margin-right: 40px;
+}
+.topbuttons {
+  background-color: rgba(255, 0, 0, 0.685);
+  border: none;
+  color: white;
+  border-radius: 8%;
+  margin-right: 40px;
+}
+.topbutton:hover {
+  background-color: rgba(255, 0, 0, 0.685);
+  color: white;
+  border-radius: 35%;
+}
+
+.background{
+  position:static;
+background-color: black;
+padding-bottom: 10px;
+}
+.slideshow {
+  list-style-type: none;
+  margin-top: 13px;
+}
+
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    top: -16px; 
+		position:relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    z-index: 0; 
+}
+
+.slideshow li span { 
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 56s linear infinite 0s; 
+}
+
+
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("/images/wallpaperflare.com_wallpaper.jpg"); 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("/images/wallpaperflare.com_wallpaper\ \(1\).jpg");
+    animation-delay: 8s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("/images/1234776.jpg");
+    animation-delay: 16s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url("/images/339558.jpg");   
+    animation-delay: 24s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url("/images/1216602.jpg");
+    animation-delay: 32s; 
+}
+.slideshow li:nth-child(6) span { 
+  background-image: url("/images/709942.jpg");
+  animation-delay: 40s; 
+}
+.slideshow li:nth-child(7) span { 
+  background-image: url("/images/1125966.jpg");
+  animation-delay: 48s; 
+}
+
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}
+footer {
+  padding-left: 2%;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.about {
+  color: white;
+}
+.term {
+  color: white;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2635.jpg?size=626&ext=jpg&ga=GA1.1.1675344074.1683311587&semt=ais);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.co {
+  color: white;
+  font-size: 32px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.con {
+  color: rgb(228, 228, 228);
+  font-size: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+  padding-top: 7%;
+}
+/*god of war card*/
+
+.cardg {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/610/833/243/collectors-edition-playstation-4-atreus-god-of-war-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cardg:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/610/833/243/collectors-edition-playstation-4-atreus-god-of-war-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+.first-content {
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.cardg:hover .first-content {
+  height: 0px;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.cardg:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+span {
+  color: rgb(255, 255, 255);
+  font-size: 104px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*Sniper*/
+.cardt {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://images8.alphacoders.com/125/thumbbig-1259235.webp);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cardt:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://images8.alphacoders.com/125/thumbbig-1259235.webp);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.cardt:hover .first-content {
+  height: 0px;
+}
+.cardt:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/*GTA V*/
+.cardgta {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/188/473/195/characters-of-gta-v-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cardgta:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/188/473/195/characters-of-gta-v-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.cardgta:hover .first-content {
+  height: 0px;
+}
+.cardgta:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/*Ghostrunner*/
+.cardc {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/595/156/1017/ghostrunner-cyberpunk-cyborg-ninja-katana-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cardc:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/595/156/1017/ghostrunner-cyberpunk-cyborg-ninja-katana-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.cardc:hover .first-content {
+  height: 0px;
+}
+.cardc:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/*Far cry*/
+.carda {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/656/702/364/far-cry-vaas-far-cry-3-gun-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.carda:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/656/702/364/far-cry-vaas-far-cry-3-gun-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.carda:hover .first-content {
+  height: 0px;
+}
+.carda:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/*Watch Dogs 2*/
+.cardw {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/432/339/686/ubisoft-san-francisco-game-marcus-holloway-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.cardw:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/432/339/686/ubisoft-san-francisco-game-marcus-holloway-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.cardw:hover .first-content {
+  height: 0px;
+}
+.cardw:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+/*HM*/
+.cardcod {
+  width: 400px;
+  height: 250px;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/734/599/603/hitman-agent-47-rupert-friend-hitman-3-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10%;
+}
+
+.cardcod:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/734/599/603/hitman-agent-47-rupert-friend-hitman-3-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+.cardcod:hover .first-content {
+  height: 0px;
+}
+.cardcod:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+.row {
+  padding-top: 10%;
+}
+
+.qwer{
+  margin-bottom: 15%;
+}
