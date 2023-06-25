@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 var schema = mongoose.Schema;
-mongoose
-  .connect("mongodb://localhost:27017/openworldgamesdb")
+mongoose.connect("mongodb://localhost:27017/openworldgamesdb")
   .then(() => {
     console.log("mongo connected");
   })

@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="/stylesheets/signup.css" />
 
   </head>
@@ -17,37 +17,30 @@
             <h1>SIGN Up</h1>
             <form action="sigin" method="post">
 
-              <label class="in">Email</label><br />
+              <label class="in" >Email</label><br />
               <input
                 class="inp"
                 type="email"
                 placeholder="admin@gmail.com"
                 name="uemail"
                 required
+                autocomplete="off"
               /><br />
               <label class="in">Password</label><br />
-              <input
-                class="inp"
-                type="password"
-                placeholder="password"
-                required
-                name="upassword"
-              /><br />
-              <label class="in">Conform password</label><br />
-              <input
-                class="inp"
-                type="password"
-                placeholder="password"
-                required
-                name="ucpassword"
-              /><br />
+              
+              <input type="password" autocomplete="off" name="upassword" class="inp" placeholder="password" required>
+              <br/>
+             
               <button class="continue" type="submit">CONTINUE</button>
+                
             </form>
 
           </div>
         </div>
       </div>
     </div>
+    
+  
     <script src="/javascripts/signup.js"></script>
   </body>
 </html>

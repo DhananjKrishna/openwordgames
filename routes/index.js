@@ -87,9 +87,12 @@ router.post("/sigin", async (req, res) => {
     Password: req.body.upassword,
   };
   await collects.insertMany([data]);
-
+  
   res.render("index");
 });
+
+
+
 router.post("/indx", async (req, res) => {
   try {
     const check = await collects.findOne({ Email: req.body.uemail });
@@ -102,12 +105,6 @@ router.post("/indx", async (req, res) => {
     res.render("er");
   }
 });
-router.get('/details',(req,res)=>{
-  collects.find((err,result)=>{
-    if(err) throw err;
-    res.render('details',{r:result})
-  })
-  
-})
+
 
 module.exports = router;
